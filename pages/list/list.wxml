@@ -1,0 +1,32 @@
+<!--pages/list/list.wxml-->
+<!-- <text>pages/list/list.wxml</text> -->
+<view class='skin-box'>
+<image class='skin' src='{{heroInfo.bgs[index]}}'></image>
+    <!--   -->
+    <view class='thumbnail'>
+    <image data-index="{{index}}" bindtap='changeImg' wx:for="{{heroInfo.bgs_thumbnail}}" src='{{item}}'></image>
+    </view>
+</view>
+<!-- 下面的信息盒子 -->
+<view class='info-box'>
+<view class='left'>
+  <text class='name'>{{heroInfo.name}}</text>
+  <text class='title'>{{heroInfo.title}}</text>
+  <view class='tag-box'>
+    <text wx:for="{{heroInfo.tags}}">{{item}}</text>
+  </view>
+  <!-- 能力 -->
+  <text>生存能力</text>
+  <progress percent='{{heroInfo.Ability.life}}' activeColor='#47d386'></progress>
+  <text>物理攻击</text>
+   <progress percent='{{heroInfo.Ability.physical}}' activeColor='#f2cf2e'></progress>
+    <text>魔法攻击</text>
+       <progress percent='{{heroInfo.Ability.magic}}' activeColor='#f4ad2f'></progress>
+       <text>操作难度</text>
+         <progress percent='{{heroInfo.Ability.difficulty}}' activeColor='#d2a1fc'></progress>
+</view>
+<view class='right'>
+    <text>{{heroInfo.story}}</text>
+</view>
+
+</view>

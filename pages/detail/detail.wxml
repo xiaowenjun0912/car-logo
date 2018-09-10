@@ -1,0 +1,8 @@
+<!--pages/detail/detail.wxml-->
+<!-- <text>pages/detail/detail.wxml</text> -->
+<view wx:for="{{heroList}}">
+    <navigator url="/pages/list/list?id={{item.id}}">
+          <image src="{{item.iconUrl}}"></image>
+          <text>{{item.name}}</text>
+    </navigator>
+</view>

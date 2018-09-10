@@ -1,0 +1,13 @@
+{
+  "pages":[
+    "pages/detail/detail",
+    "pages/list/list"
+    
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#4d90fe",
+    "navigationBarTitleText": "英雄列表",
+    "navigationBarTextStyle":"white"
+  }
+}

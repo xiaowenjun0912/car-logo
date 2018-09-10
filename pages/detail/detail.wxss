@@ -1,0 +1,23 @@
+/* pages/detail/detail.wxss */
+page{
+  display: flex;
+  flex-wrap: wrap;
+}
+page>view{
+  width: 33.333%;
+  height: 140px;
+  color: white;
+}
+page> view image{
+  width: 120px;
+  height: 120px;
+  display: block;
+  margin: 0 auto;
+}
+page> view text{
+  display: block;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 700;
+  margin-top: -20px;
+}

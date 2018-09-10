@@ -1,0 +1,67 @@
+/* pages/list/list.wxss */
+.skin-box{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.skin-box .skin{
+  width: 100%;
+}
+.skin-box .thumbnail{
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  left: 20rpx;
+  bottom: 20rpx;
+}
+.skin-box .thumbnail>image{
+    width: 140rpx;
+  /* position: absolute; */
+    height: 140rpx;
+}
+.info-box{
+  display: flex;
+  width: 100%;
+}
+.info-box .left{
+  width: 33.33%;
+  height: 240px;
+  background: skyblue;
+  opacity: .9;
+}
+.info-box .left .name{
+  font-weight: 700;
+  padding-left: 3px;
+  
+  color: greenyellow;
+  font-size: 16px;
+}
+.info-box .left .title{
+    font-weight: 700;
+  color: red;
+  margin-top: 5px;
+  padding-left: 3px;
+  
+  display: block;
+  font-size: 14px;
+}
+
+.info-box .left .tag-box{
+  font-size: 12px;
+  border-radius: 5px;
+  margin-top: 5px;
+  margin-right: 3px;
+  padding-left: 3px;
+}
+
+.info-box .left .tag-box text{
+  color: white;
+  background: purple;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+
+.info-box .right{
+  flex: 1;
+}
